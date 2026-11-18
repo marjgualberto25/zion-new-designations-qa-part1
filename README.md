@@ -31,6 +31,8 @@ After:   JFA → FA → SFA → MP → EP (self-reporting)
 | 3 | [User Stories & Acceptance Criteria](docs/03-user-stories.md) | 5 user stories, 19 acceptance criteria |
 | 4 | [Test Cases](docs/04-test-cases.md) | 46 test cases across System A, System B and the API |
 | 5 | [Traceability Matrix](docs/05-traceability-matrix.md) | AC → test case mapping, 100% coverage |
+| 6 | [Root Cause Analysis – DEF-001](docs/06-rca.md) | Production setup line missed after go-live: 5 Whys, fix and preventive action |
+| 7 | [PIV Template](docs/07-piv-template.md) | Post-implementation verification checklist introduced by the RCA |
 | – | [Excel workbook](excel/Zion_New_Designations_Part1_QA.xlsx) | Same package with execution tracking and live coverage counts |
 
 ## Test coverage at a glance
@@ -53,6 +55,7 @@ By type: Positive 24, Negative 12, Regression 5, Boundary 5.
 - **Hierarchy rule testing**: skip-level and downward reporting cases around the new levels, plus the EP self-reporting rule
 - **Regression**: existing designations, product setup lines and hierarchy records checked against a pre-deployment baseline
 - **Negative testing**: duplicate codes, products outside the channel, unknown agent codes and expired licences
+- **Defect follow-through**: an RCA on a Production configuration gap, with a post-implementation verification (PIV) process to prevent it recurring
 - **Reusable test data**: a full five-level agent chain that Part 2 uses for commission and override testing
 
 ## Author
